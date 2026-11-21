@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Support · Productivity Race</title>
+<meta name="description" content="Help with Productivity Race: points, unlocks, purchases, widgets and reminders.">
+<meta property="og:title" content="Support · Productivity Race"><meta property="og:description" content="Help with Productivity Race: points, unlocks, purchases, widgets and reminders."><meta property="og:image" content="https://productivityrace.com/img/icon.png">
+<link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="top"><a class="brand" href="/"><img src="/img/icon.png" alt="">Productivity Race</a><nav><a href="/">Home</a><a href="/support/" aria-current="page">Support</a><a href="/privacy/">Privacy</a></nav></div>
+<main>
+  <div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+  <header>
+    <p class="eyebrow">Productivity Race</p>
+    <h1>Help &amp; Support</h1>
+    <p class="lead">Answers to common questions, and how to reach us if you need a hand.</p>
+  </header>
+
+  <div class="promise">
+    <b>Get in touch</b>
+    <p>Questions, bugs or ideas: email us and we'll get back to you.</p>
+    <div class="contact"><code id="mail">productivityrace@gmail.com</code><button type="button" id="copy">Copy address</button></div>
+  </div>
+
+  <section>
+    <h2>Common questions</h2>
+    <div class="faq">
+      <details><summary>How do points work?</summary><p>Every task you tick off moves its category forward. Quick tasks score 1 point, medium activities 3 and big commitments 5. When the race ends (each day, week or month, as you choose in Settings), the category furthest ahead wins.</p></details>
+      <details><summary>How do I unlock more races and characters?</summary><p>New races unlock as your daily streak grows, and new characters unlock as you complete more tasks. Or unlock every race and character at once with a one-off purchase in <span class="path"><span>Settings</span><em>→</em><span>Unlock everything</span></span>.</p></details>
+      <details><summary>I bought Unlock everything. How do I get it on a new phone or after reinstalling?</summary><p>Sign in with the same Apple ID, then tap <span class="path"><span>Settings</span><em>→</em><span>Unlock everything</span><em>→</em><span>Restore purchase</span></span>. The purchase is linked to your Apple ID, so you never pay twice.</p></details>
+      <details><summary>How do I get a refund?</summary><p>Purchases are handled by Apple, so refunds are too. Visit reportaproblem.apple.com and sign in with your Apple ID.</p></details>
+      <details><summary>How do I put my to-dos on my lock screen?</summary><p>On iPhone with iOS 16 or later, long-press your lock screen, tap Customise, then Lock Screen. Tap the box under the clock and choose Productivity Race, then To-dos. To keep task names private, choose <span class="path"><span>Settings</span><em>→</em><span>Lock screen</span><em>→</em><span>Count only</span></span>.</p></details>
+      <details><summary>I'm not getting reminders.</summary><p>Check that notifications are on in <span class="path"><span>Settings</span><em>→</em><span>Allow notifications</span></span>, and in your iPhone's Settings app under Notifications, Productivity Race. Evening nudges only appear for daily tasks you haven't ticked off yet.</p></details>
+      <details><summary>Will my tasks move to a new phone?</summary><p>Your data is stored on your phone and included in your iPhone backup. Restoring that backup to a new phone brings it across. The app has no account or server, so there is nothing to sign in to.</p></details>
+      <details><summary>How do I start again from scratch?</summary><p>Tap <span class="path"><span>Settings</span><em>→</em><span>Reset everything</span></span> to erase your tasks and scores. Deleting the app removes all of its data.</p></details>
+      <details><summary>Can I change the language?</summary><p>The app follows your phone's language, and you can pick English, Spanish, French, German or Chinese in Settings.</p></details>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>No account, no ads, no tracking: your data stays on your phone. Read the <a href="/privacy/">full privacy policy</a>.</p>
+  </section>
+  <footer><span>© 2026 Productivity Race</span><span><a href="/support/">Support</a> · <a href="/privacy/">Privacy</a> · <a href="mailto:productivityrace@gmail.com">productivityrace@gmail.com</a></span></footer>
+</main>
+<script>
+document.getElementById('copy').addEventListener('click',function(){var b=this,t=document.getElementById('mail').textContent;
+var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy address'},1600)};
+var sel=function(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=getSelection();s.removeAllRanges();s.addRange(r)};
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,sel)}else sel()});
+</script>
+</body>
+</html>
